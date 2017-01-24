@@ -1,0 +1,204 @@
+@if($modulo->id == "1") 
+		        	<span class=" glyphicon glyphicon-asterisk"></span>  Pasado Simple. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.1.clase1')}}"> Ver Clase </a> 
+		        	| <a href="{{ route('estudiante.modulos.1.practica1')}}"> Hacer Practica </a> | 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "1")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }}
+		        	 		<?php $nota1 = $nota->nota; ?>
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Presente Simple. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.1.clase2')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota1>49)
+		        		<a href="{{ route('estudiante.modulos.1.practica2')}}"> Hacer Practica </a>
+		        	@else
+		        		Hacer Practica 
+		        	@endif 		        	
+		        	 | 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "2")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }}
+		        	 		<?php $nota2 = $nota->nota; ?> 
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Futuro Simple. <br>
+		        	<a href="{{ route('estudiante.modulos.1.clase3')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota2>49)
+		        	<a href="{{ route('estudiante.modulos.1.practica3')}}"> Prueba Final </a>
+		        	@else
+		        	Prueba Final 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "3")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota3 = $nota->nota; ?> 
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	@elseif($modulo->id == "2") 
+		        	<span class=" glyphicon glyphicon-asterisk"></span>  Pasado Continuo. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.2.clase4')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota3>79)
+		        	<a href="{{ route('estudiante.modulos.2.practica4')}}"> Hacer Practica </a>
+		        	@else
+		        	Hacer Practica 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "4")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }}
+		        	 		<?php $nota4 = $nota->nota; ?> 
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Presente y Futuro Continuo. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.2.clase5')}}"> Ver Clase </a> 
+		        	| 
+		        	@if($nota4>49)
+		        	<a href="{{ route('estudiante.modulos.2.practica5')}}"> Hacer Practica </a>
+		        	@else
+		        	Hacer Practica 
+		        	@endif  
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "5")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }}
+		        	 		<?php $nota5 = $nota->nota; ?> 
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Tiempos Imperativos. <br>
+		        	<a href="{{ route('estudiante.modulos.2.clase6')}}"> Ver Clase </a> 
+		        	| 
+		        	@if($nota5>49)
+		        	<a href="{{ route('estudiante.modulos.2.practica6')}}"> Prueba Final </a>
+		        	@else
+		        	Prueba Final 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "6")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }}
+		        	 		<?php $nota6 = $nota->nota; ?> 
+		        	 	@endif
+		        	@endforeach
+		        	@elseif($modulo->id == "3") 
+		        	<span class=" glyphicon glyphicon-asterisk"></span>  Estructura Gramatical. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.3.clase7')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota6>79)
+		        	<a href="{{ route('estudiante.modulos.3.practica7')}}"> Hacer Practica </a>
+		        	@else
+		        	Hacer Practica 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "7")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota7 = $nota->nota; ?> 
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> De voz activa a pasiva. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.3.clase8')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota7>49)
+		        	<a href="{{ route('estudiante.modulos.3.practica8')}}"> Hacer Practica </a>
+		        	@else 
+		        	Hacer Practica 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "8")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota8 = $nota->nota; ?>
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Usos. <br>
+		        	<a href="{{ route('estudiante.modulos.3.clase9')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota8>49)
+		        	<a href="{{ route('estudiante.modulos.3.practica9')}}"> Prueba Final </a>
+		        	@else 
+		        	Prueba Final 
+		        	@endif  
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "9")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota9 = $nota->nota; ?>
+		        	 	@endif
+		        	@endforeach
+		        	@elseif($modulo->id == "4") 
+		        	<span class=" glyphicon glyphicon-asterisk"></span>  Previewing. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.4.clase10')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota9>79)
+		        	<a href="{{ route('estudiante.modulos.4.practica10')}}"> Hacer Practica </a>
+		        	@else 
+		        	Hacer Practica 
+		        	@endif   
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "10")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota10 = $nota->nota; ?>
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Skimming. 
+		        	<br>
+		        	<a href="{{ route('estudiante.modulos.4.clase11')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota10>49)
+		        	<a href="{{ route('estudiante.modulos.4.practica11')}}"> Hacer Practica </a>
+		        	@else 
+		        	Hacer Practica 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "11")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota11 = $nota->nota; ?>
+		        	 	@endif
+		        	@endforeach  
+		        	<br>
+		        	<br>
+		        	<span class=" glyphicon glyphicon-asterisk"></span> Scanning. <br>
+		        	<a href="{{ route('estudiante.modulos.4.clase12')}}"> Ver Clase </a> 
+		        	|
+		        	@if($nota11>49)
+		        	<a href="{{ route('estudiante.modulos.4.practica12')}}"> Prueba Final </a>
+		        	@else 
+		        	Prueba Final 
+		        	@endif 
+		        	| 
+		        	@foreach ($notas as $nota)
+		        	 	@if($nota->evaluacion_id == "12")
+		        	 		Nota: {{ $nota->nota }} pts. | Intentos: {{ $nota->intentos }} 
+		        	 		<?php $nota12 = $nota->nota; ?>
+		        	 	@endif
+		        	@endforeach
+		        @endif

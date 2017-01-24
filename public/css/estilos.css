@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "MankSans";
+    src: url(../fonts/mank_sans/MankSans.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "enso";
+    src: url(../fonts/Enso/enso.ttf) format("truetype");
+}
+
+body{ 
+	font-family: "MankSans";
+	padding-bottom: 30px;
+	background-color: #FFF;
+}
+
+.background{
+  background-image: url(../img/cne-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel{
+  background-color:  rgba(255, 255, 255, 0.84);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "enso";
+}
+
+hr{
+	margin: 1px !important;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo{
+  width: 200px;
+}
+
+.logo2{
+  width: 300px;
+}
+.navbar-inverse {
+   color: #fff;
+   background-color: #C80505;
+   border-color: #C80505;
+   border-radius: 0px;
+}
+
+.footer{
+	color: #fff;
+	background-color: #C80505;
+  border-color: #C80505;	
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #50a5ef;
+    border-color: #50a5ef;
+    color: #fff;
+}
+
+.btn-default {
+    background-color: #cfcc04;
+    border-color: #cfcc04;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #C80505;
+    border-color: #C80505;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #9B0303;
+    border-color: #9B0303;
+    color: #fff;
+}
+
+.pagination > .active > a{
+  background-color: #50a5ef;
+  border-color: #50a5ef;
+}
+
+.panel-default > .panel-heading {
+    color: #FBF4F4;
+    background-color: #C80505;
+    border-color: #C80505;
+    border-top-left-radius: 0px;
+}
+
+.navbar-nav > li:hover {
+  background-color: #9B0303;
+  border-color: #9B0303;
+
+}
+
+.active {
+  background-color: #9B0303;
+  border-color: #9B0303;
+
+}
