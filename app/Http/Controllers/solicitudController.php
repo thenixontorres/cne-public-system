@@ -38,6 +38,8 @@ class solicitudController extends InfyOmBaseController
      * @param Request $request
      * @return Response
      */
+
+    // Listar las solicitudes
     public function index(Request $request)
     {
         $this->solicitudRepository->pushCriteria(new RequestCriteria($request));
@@ -52,6 +54,8 @@ class solicitudController extends InfyOmBaseController
      *
      * @return Response
      */
+
+    //Registrar las solicitudes
     public function create()
     {   
         $receptors = receptor::all();
@@ -70,6 +74,8 @@ class solicitudController extends InfyOmBaseController
      *
      * @return Response
      */
+
+    //Funcion que registra la solicitud
     public function store(CreatesolicitudRequest $request)
     {
         $input = $request->all();
@@ -117,6 +123,8 @@ class solicitudController extends InfyOmBaseController
      *
      * @return Response
      */
+
+    //funcion para ver detalles de la solicitud
     public function show($id)
     {
         $solicitud = $this->solicitudRepository->findWithoutFail($id);
@@ -137,6 +145,8 @@ class solicitudController extends InfyOmBaseController
      *
      * @return Response
      */
+
+    //funcion para editar solicitud
     public function edit($id)
     {
         $receptors = receptor::all();
@@ -167,6 +177,8 @@ class solicitudController extends InfyOmBaseController
      *
      * @return Response
      */
+
+    //funcion que actualiza la informacion de una solicitud editada
     public function update($id, UpdatesolicitudRequest $request)
     {
         $solicitud = $this->solicitudRepository->findWithoutFail($id);
@@ -207,6 +219,9 @@ class solicitudController extends InfyOmBaseController
      *
      * @return Response
      */
+
+
+    //funcion que elimina una solicitud
     public function destroy($id)
     {
         $solicitud = $this->solicitudRepository->findWithoutFail($id);

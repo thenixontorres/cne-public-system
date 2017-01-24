@@ -8,10 +8,10 @@
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<ul>
 					 	<li>
-					 		<a class="text-footer-list footer-a" href="#" target="_blank"> Manual de Usuario </a>
+					 		<a class="text-footer-list footer-a" href="{{ asset('manuales/Manual-Usuario.pdf') }}" target="_blank"> Manual de Usuario </a>
 					 	</li>
 					 	<li>
-					 		<a class="text-footer-list footer-a" href="#" target="_blank"> Manual Tecnico </a>
+					 		<a class="text-footer-list footer-a" href="{{ asset('manuales/Manual-Tecnico.pdf') }}" target="_blank"> Manual Tecnico </a>
 					 	</li>
 					</ul>
 				</div>	

@@ -38,6 +38,7 @@ class solicitud extends Model
 
     protected $dates = ['deleted_at'];
 
+//Campos del modelo
 
     public $fillable = [
         'titular_id',
@@ -55,6 +56,7 @@ class solicitud extends Model
         
     ];
 
+//Relaciones con otros modelos
     public function titular()
     {
         return $this->BelongsTo('App\Models\titular');
@@ -80,20 +82,12 @@ class solicitud extends Model
         return $this->BelongsTo('App\Models\tipoacta');
     }
     
-    /**
-     * The attributes that should be casted to native types.
-     *
-     * @var array
-     */
     protected $casts = [
         
     ];
 
-    /**
-     * Validation rules
-     *
-     * @var array
-     */
+    //validaciones
+
     public static $rules = [
         'numero_acta' => 'required',
         'fecha_acta' => 'required',
