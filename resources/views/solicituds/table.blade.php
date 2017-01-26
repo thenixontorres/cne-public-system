@@ -5,6 +5,7 @@
         <th>Solicitante</th>
         <th>Tipo de Acta</th>
         <th>Estatus</th>
+        <th>Receptor</th>
         <th>Action</th>
     </thead>
     <tbody>
@@ -15,6 +16,7 @@
             <td>{!! $solicitud->solicitante->nombre.' '.$solicitud->solicitante->apellido.' '.$solicitud->solicitante->cedula !!}</td>
             <td>{!! $solicitud->tipoacta->tipo !!}</td>
             <td>{!! $solicitud->estatus_tramite !!}</td>
+            <td>{!! $solicitud->receptor->receptor.' '.$solicitud->receptor->ubicacion !!}</td> 
             <td>
                 {!! Form::open(['route' => ['solicituds.destroy', $solicitud->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

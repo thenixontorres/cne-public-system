@@ -3,7 +3,7 @@
 			<br>
 			<div class="row pad-footer">
 				<div class="col-xs-12 col-sm-6 col-md-6">
-					<p>Sistema de Informacion para el Segumiento y Control de Solicitudes, Actas y Constancias de Nacimiento.</p>
+					<p>Sistema de Informacion para el Segumiento y Control de Solicitudes, Actas y Constancias.</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<ul>
